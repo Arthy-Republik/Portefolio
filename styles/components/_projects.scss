@@ -1,0 +1,26 @@
+.sectionProjects {
+  min-height: 100vh;
+  background-image: url(./assets/img/gc.jpg);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  align-content: center;
+  .projectsList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    align-content: center;
+  }
+  .project {
+    line-height: 80px;
+    font-size: 6rem;
+    color: white;
+  }
+}

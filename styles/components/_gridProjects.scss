@@ -1,0 +1,48 @@
+.gridProjects { 
+min-height: 100vh;
+max-width: 94%;
+
+
+.container {  
+ margin: 60px;
+  display: grid;
+  grid-template-columns: 32% 35% 32%;
+  grid-template-rows: 500px 700px 400px;
+  gap: 60px 60px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "p1 p2 p3"
+    "p4 p5 p6"
+    "p7 p8 p9";
+
+
+.p1 { 
+  grid-area: p1;
+background: blueviolet;
+}
+
+.p2 { grid-area: p2; 
+  background: blueviolet}
+
+.p3 { grid-area: p3; 
+  background: blueviolet}
+
+.p4 { grid-area: p4;
+  background: blueviolet }
+
+.p5 { grid-area: p5;
+  background: blueviolet }
+
+.p6 { grid-area: p6; 
+  background: blueviolet}
+
+.p7 { grid-area: p7; 
+  background: blueviolet}
+
+.p8 { grid-area: p8; 
+  background: blueviolet}
+
+.p9 { grid-area: p9; 
+  background: blueviolet}
+}
+}

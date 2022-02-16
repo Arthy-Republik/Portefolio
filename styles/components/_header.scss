@@ -1,0 +1,131 @@
+.header {
+  min-height: 100vh;
+  background-color: rgba(81, 150, 219, 0.507);
+  position: relative;
+ 
+
+  .navContainer {
+    .logo {
+      transform: translateY(-50px);
+    }
+
+    .nav {
+      top: 60px;
+      right: 70px;
+      position: absolute;
+      width: 50px;
+    }
+
+    .nav:before,
+    .nav:after,
+    .nav div {
+      background: #fff;
+      content: "";
+      display: block;
+      height: 3px;
+      border-radius: 5px;
+      margin: 8px 0;
+      transition: 0.5s;
+    }
+
+    .nav:hover:before {
+      transform: rotate(45deg);
+    }
+
+    .nav:hover:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .textContainer {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: -50px;
+
+    .textH2 {
+      line-height: 95px;
+      letter-spacing: 4px;
+
+      .creative {
+        font-size: 7rem;
+        color: aquamarine;
+      }
+
+      .front {
+        font-size: 8rem;
+      }
+
+      .web {
+        font-size: 8em;
+      }
+
+      .france {
+        font-size: 7rem;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        animation: cursor 0.5s linear, typing 3s steps(15) both;
+      }
+
+      @keyframes cursor {
+        0% {
+          border-color: transparent;
+        }
+
+        50% {
+          border-color: rgb(194, 185, 185);
+        }
+
+        100% {
+          border-color: transparent;
+        }
+      }
+
+      @keyframes typing {
+        0% {
+          width: 0;
+        }
+
+        30% {
+          width: 600px;
+        }
+
+        70% {
+          width: 900px;
+        }
+
+        90% {
+          width: 1200px;
+        }
+
+        100% {
+          width: 1200px;
+        }
+      }
+    }
+  }
+
+  .bottomHeader {
+    display: flex;
+    justify-content: space-between;
+
+    .contact {
+      position: absolute;
+      bottom: 20px;
+      left: 70px;
+      font-size: 1.2rem;
+    }
+
+    .social {
+      position: absolute;
+      bottom: 20px;
+      right: 70px;
+      font-size: 1.2rem;
+    }
+
+    .git {
+      margin-right: 20px;
+    }
+  }
+}
