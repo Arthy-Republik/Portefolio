@@ -5,74 +5,91 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
+  display: grid;
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-
-  align-content: center;
-  .projectsList {
+  align-items: center;
+  .projectsListContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
-    align-content: center;
+  }
+  ul { 
+   margin: 0 auto;
+    width: 60%;
   }
   .project {
     line-height: 80px;
     font-size: 6rem;
     color: white;
   }
-}
-.arrowsProject {
-	width: 100px;
-	height: 72px;
-	position: absolute;
-	left: 50%;
-	margin-left: -30px;
-	bottom: 20px;
-}
+  .active:hover {
+    font-style: italic;
+    color: black;
+    background: rgba(241, 206, 10, 0.205);
+    border-radius: 20px;
+   
+  }
 
-.arrowsProject  path {
-	stroke: #f0efefd7;
-	fill: transparent;
-	stroke-width: 2px;	
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; 
+  .arrowsProject {
+    width: 100px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom:20px;
+  }
 
-}
+  .arrowsProject path {
+    stroke: #f0efefd7;
+    fill: transparent;
+    stroke-width: 2px;
+    animation: arrow 2s infinite;
+   
+  }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
+  @keyframes arrow {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
+  @-webkit-keyframes  {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
-.arrowsProject  path.a1 {
-	animation-delay:-1s;
-	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
-}
+  .arrowsProject path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s; 
+  }
 
-.arrowsProject  path.a2 {
-	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
-}
+  .arrowsProject path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+  }
 
-.arrowsProject  path.a3 {	
-	animation-delay:0s;
-	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+  .arrowsProject path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s; 
+  }
 }

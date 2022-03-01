@@ -1,0 +1,41 @@
+.contact {
+ 
+  margin-left: 50px;
+  position: relative;
+.contactH2 { 
+
+  text-align: left;
+  font-size: 6rem;
+}
+ 
+  .contactMe {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  }
+  .arthurPicture img {
+    border-radius: 300px;
+    // width: 80%;
+  }
+.contactContent { 
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+  .inquiry {
+    font-size: 4rem;
+  }
+
+  .emailArthur { 
+
+  }
+}
+  .arrowUp {
+    
+    position: absolute;
+    bottom: 0;
+    left: +50%;
+    align-items: center;
+    transform: translateX(+50%);
+  }
+}

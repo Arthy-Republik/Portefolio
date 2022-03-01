@@ -1,99 +1,85 @@
-.gridProjects { 
-min-height: 100vh;
-max-width: 100%;
-overflow: hidden;
-margin-left: 50px;
-margin-right: 50px;
-
-.featuredProjects { 
-margin-bottom: 10px;
-  text-align: left;
-  font-size: 6rem;
-}
-.container {  
+.gridProjects {
+ margin: 50px;
  
-  display: grid;
-  justify-content:space-around;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 500px 700px 400px;
-  gap: 50px 50px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "p1 p2 p3"
-    "p4 p5 p5"
-    "p6 p7 p8";
 
+  .featuredProjects {
+    margin-top: 120px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 6rem;
+   
+  }
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 500px 700px 400px;
+    gap: 50px 50px;
+    grid-template-areas:
+      "p1 p2 p3"
+      "p4 p5 p5"
+      "p6 p7 p8";
 
-.p1 { 
-  grid-area: p1;
-background-image: url(./assets/img/background.jpg);
+    .p1 {
+      grid-area: p1;
+      background-image: url(./assets/img/background.jpg);
+    }
+    .p2 {
+      grid-area: p2;
+      background-image: url(./assets/img/banner-2.jpg);
+    }
+    .p3 {
+      grid-area: p3;
+      background-image: url(./assets/img/immo.jpg);
+    }
+    .p4 {
+      grid-area: p4;
+      background-image: url(./assets/img/poster.jpg);
+    }
+    .p5 {
+      grid-area: p5;
+      background-image: url(./assets/img/chucky.jpg);
+    }
+    .p6 {
+      grid-area: p6;
+      background-image: url(./assets/img/dish-gallery-05.jpg);  
+    }
+    .p7 {
+      grid-area: p7;
+      background-image: url(./assets/img/bg.jpg);
+    }
+    .p8 {
+      grid-area: p8;
+      background-image: url(./assets/img/arthur.jpg);
+    }
 
+  .projectsPicture { 
+  overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-width: 100%;
-height: 500px;
+  max-width: 100%;
+  min-height:auto;
+  
+
 }
 
-.p2 { grid-area: p2; 
-  background-image: url(./assets/img/banner-2.jpg);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-width: 100%;
-height: 500px;}
+    .projectsPicture:hover {
+      background-image: none;
+      background-color: rgba(0, 0, 0, 0.952);
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+     
+     
+    }
 
-.p3 { grid-area: p3; 
-  background-image: url(./assets/img/immo.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 500px;}
-
-.p4 { grid-area: p4;
-  background-image: url(./assets/img/poster.jpg);
-  // background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 700px; }
-
-.p5 { grid-area: p5 ;
-  background-image: url(./assets/img/chucky.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 700px;}
-
-.p6 { grid-area: p6; 
-  background-image: url(./assets/img/dish-gallery-05.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 400px;}
-
-.p7 { grid-area: p7; 
-  background-image: url(./assets/img/bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 400px;}
-
-.p8 { grid-area: p8; 
-  background: blueviolet}
-
-
+    .projectsPicture:hover:after {
+      content: attr(data-hover);
+      color: white;
+      font-size: 3rem;
+      
+    }
+  }
 }
-}
-.inspiredByLife { 
 
-  text-align: left;
-  font-size: 4rem;
-  margin-left: 50px;
-margin-top: -50px;
-margin-bottom: -50px;
-}
