@@ -1,18 +1,26 @@
-.aboutMe {
-  background: rgba(71, 92, 97, 0.835);
-padding: 50px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  .titleAboutMe {
+.aboutMe{ 
+display: flex;
+justify-content: center;
+align-items: center;
+// background-color: rgb(10, 10, 10);
+background-image: linear-gradient(to bottom, #0984e3, #3561a6, #33416d, #242539, #0a0a0a);
+height: 100vh;
+.bioDiv {
     display: flex;
+    flex-direction: column;
+    width: 50%;
     justify-content: center;
-    width: 40%;
-    margin: 0 auto;
-    .bio {
-      font-size: 1.5rem;
-      line-height: 50px;
-      text-align: justify;
+  
+    margin: 0 a;
+   
+
+    p {
+      font-size: 3rem;
+      color: rgba(240, 248, 255, 0.767);
+      text-align: center;
+      line-height: 60px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
   }
 }

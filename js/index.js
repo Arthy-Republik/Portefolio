@@ -1,9 +1,7 @@
 
 
-$('ul li').hover(function() {
-  $('picture').removeClass().addClass(
-    $(this).attr('rel'));
-$(this).addClass('active').siblings()
-.removeClass('active');
-  
-})
+let imgChange =(e) => { 
+  document.querySelector(".bg_image").style.backgroundImage =`url(${e})`;
+
+};
+

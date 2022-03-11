@@ -7,21 +7,22 @@
     margin-bottom: 20px;
     text-align: left;
     font-size: 6rem;
-   
+    background: white;
   }
   .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 500px 700px 400px;
+    grid-template-rows: 700px 800px 600px;
     gap: 50px 50px;
     grid-template-areas:
       "p1 p2 p3"
       "p4 p5 p5"
       "p6 p7 p8";
 
-    .p1 {
+    .p1 { 
       grid-area: p1;
       background-image: url(./assets/img/background.jpg);
+      
     }
     .p2 {
       grid-area: p2;
@@ -37,7 +38,7 @@
     }
     .p5 {
       grid-area: p5;
-      background-image: url(./assets/img/chucky.jpg);
+      background-image: url(./assets/img/chateau-ambulant.jpg);
     }
     .p6 {
       grid-area: p6;
@@ -49,7 +50,7 @@
     }
     .p8 {
       grid-area: p8;
-      background-image: url(./assets/img/arthur.jpg);
+      background-image: url(./assets/img/tinder1.png);
     }
 
   .projectsPicture { 
@@ -70,8 +71,6 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-     
-     
     }
 
     .projectsPicture:hover:after {
