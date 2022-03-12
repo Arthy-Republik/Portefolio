@@ -7,7 +7,7 @@ header {
   .box1::after {
     content: " ";
     border-top: 100vh solid white;
-    border-right: 100vw solid #0984E3;
+    border-right: 100vw solid #FFD542;
     width: 0;
     position: absolute;
     z-index: -10;
@@ -63,7 +63,6 @@ header {
       }
 
       .nav {
-        
         & ul {
           position: absolute;
           display: flex;
@@ -74,13 +73,10 @@ header {
           position: fixed;
           font-weight: 500;
           letter-spacing: 1px;
-         
 
           & a {
             font-size: 1rem;
             position: relative;
-       
-            
           }
 
           & a::before {
@@ -120,13 +116,13 @@ header {
         font-size: 15rem;
         background: linear-gradient(
           -45deg,
-          #eb2f06 25%,
-          #6a89cc 25%,
-          #6a89cc 50%,
-          #eb2f06 50%,
-          #eb2f06 75%,
-          #6a89cc 75%,
-          #6a89cc
+          #FFD542 25%,
+          #e17055 25%,
+          #FFD542 50%,
+          #e17055 50%,
+          #FFD542  75%,
+          #e17055 75%,
+          #FFD542
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -142,10 +138,12 @@ header {
 
       .front {
         font-size: 13rem;
+        color: rgba(28, 24, 23, 0.938);
       }
 
       .web {
         font-size: 15rem;
+        color: rgba(28, 24, 23, 0.938);
       }
     }
   }

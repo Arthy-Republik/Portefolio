@@ -1,9 +1,10 @@
 .aboutMe{ 
+  z-index: -1;
 display: flex;
 justify-content: center;
 align-items: center;
-// background-color: rgb(10, 10, 10);
-background-image: linear-gradient(to bottom, #0984e3, #3561a6, #33416d, #242539, #0a0a0a);
+
+background-image:  linear-gradient(to bottom, #ffd542, #d78d41, #98543d, #4e2a2a, #000000);
 height: 100vh;
 .bioDiv {
     display: flex;

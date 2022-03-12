@@ -10,7 +10,7 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgba(28, 24, 23, 0.938);
   font-family: "Vollkorn", serif;
 }
 
@@ -39,7 +39,7 @@ header {
 header .box1::after {
   content: " ";
   border-top: 100vh solid white;
-  border-right: 100vw solid #0984E3;
+  border-right: 100vw solid #FFD542;
   width: 0;
   position: absolute;
   z-index: -10;
@@ -178,7 +178,7 @@ header .textContainer #textContainer {
 
 header .textContainer #textContainer .creative {
   font-size: 15rem;
-  background: linear-gradient(-45deg, #eb2f06 25%, #6a89cc 25%, #6a89cc 50%, #eb2f06 50%, #eb2f06 75%, #6a89cc 75%, #6a89cc);
+  background: linear-gradient(-45deg, #FFD542 25%, #e17055 25%, #FFD542 50%, #e17055 50%, #FFD542 75%, #e17055 75%, #FFD542);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 20px;
@@ -201,10 +201,12 @@ header .textContainer #textContainer .creative {
 
 header .textContainer #textContainer .front {
   font-size: 13rem;
+  color: rgba(28, 24, 23, 0.938);
 }
 
 header .textContainer #textContainer .web {
   font-size: 15rem;
+  color: rgba(28, 24, 23, 0.938);
 }
 
 header .arrows {
@@ -272,98 +274,8 @@ header .arrows path.a3 {
   /* Safari 和 Chrome */
 }
 
-.Iam {
-  position: absolute;
-  top: +10px;
-}
-
-.Iam p {
-  height: 500px;
-  float: left;
-  margin-right: 0.3em;
-}
-
-.Iam b {
-  float: left;
-  overflow: hidden;
-  position: relative;
-  height: 50px;
-  top: 40px;
-}
-
-.Iam .innerIam span {
-  display: inline-block;
-  color: #e74c3c;
-  position: relative;
-  white-space: nowrap;
-  top: 0;
-  left: 0;
-  /*animation*/
-  -webkit-animation: move 5s;
-  animation: move 5s;
-  /*animation-iteration-count*/
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  /*animation-delay*/
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-@keyframes move {
-  0% {
-    top: 0px;
-  }
-  20% {
-    top: -50px;
-  }
-  40% {
-    top: -100px;
-  }
-  60% {
-    top: -150px;
-  }
-  80% {
-    top: -200px;
-  }
-}
-
-@-webkit-keyframes move {
-  0% {
-    top: 0px;
-  }
-  20% {
-    top: -50px;
-  }
-  40% {
-    top: -100px;
-  }
-  60% {
-    top: -150px;
-  }
-  80% {
-    top: -200px;
-  }
-}
-
-@keyframes move {
-  0% {
-    top: 0px;
-  }
-  20% {
-    top: -50px;
-  }
-  40% {
-    top: -100px;
-  }
-  60% {
-    top: -150px;
-  }
-  80% {
-    top: -200px;
-  }
-}
-
 .aboutMe {
+  z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,8 +285,8 @@ header .arrows path.a3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0984e3), color-stop(#3561a6), color-stop(#33416d), color-stop(#242539), to(#0a0a0a));
-  background-image: linear-gradient(to bottom, #0984e3, #3561a6, #33416d, #242539, #0a0a0a);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd542), color-stop(#d78d41), color-stop(#98543d), color-stop(#4e2a2a), to(#000000));
+  background-image: linear-gradient(to bottom, #ffd542, #d78d41, #98543d, #4e2a2a, #000000);
   height: 100vh;
 }
 
@@ -848,8 +760,9 @@ header .arrows path.a3 {
   margin-top: 120px;
   margin-bottom: 20px;
   text-align: left;
-  font-size: 6rem;
+  font-size: 8rem;
   background: white;
+  color: rgba(28, 24, 23, 0.938);
 }
 
 .gridProjects .gridContainer {
@@ -956,7 +869,84 @@ header .arrows path.a3 {
 }
 
 .contact {
-  height: 90vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: -1;
+  position: relative;
+}
+
+.contact .contactH2 {
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  font-size: 10rem;
+  line-height: 200px;
+  position: relative;
+  font-weight: 100;
+  padding-left: 200px;
+  color: rgba(28, 24, 23, 0.938);
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+.contact .contactH2 span {
+  position: absolute;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  color: rgba(28, 24, 23, 0.938);
+  z-index: +1000;
+}
+
+.contact .contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  position: relative;
+}
+
+.contact .contactContent .inquiry {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.contact .contactContent .inquiry .gradientText {
+  background-color: #9978f3;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.contact .contactContent .arthyPola {
+  position: absolute;
+  left: 150px;
+  top: -40px;
+}
+
+.contact .contactContent .arthyPola img {
+  width: 80%;
+  -webkit-box-shadow: 10px 10px 50px #ccc;
+  box-shadow: 10px 10px 50px #ccc;
 }
 
 footer {
@@ -978,16 +968,17 @@ footer {
 
 footer .leftFooter {
   font-size: 1rem;
-  letter-spacing: 1px;
-  color: #f9fbfb;
+  letter-spacing: 2px;
+  color: rgba(240, 248, 255, 0.801);
 }
 
 footer .rightFooter a {
-  color: #f9fbfb;
+  color: rgba(240, 248, 255, 0.801);
   padding-left: 30px;
   font-size: 1rem;
   letter-spacing: 1px;
   position: relative;
+  letter-spacing: 2px;
 }
 
 footer .rightFooter a::before {
@@ -1003,13 +994,22 @@ footer .rightFooter a::before {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   height: 1.5px;
   width: 70%;
-  background-color: white;
-  z-index: 1000;
+  background-color: rgba(240, 248, 255, 0.801);
 }
 
 footer .rightFooter a:hover::before {
   -webkit-transform: translateX(-50%) scale(1);
           transform: translateX(-50%) scale(1);
+}
+
+footer .arrowUp {
+  position: absolute;
+  bottom: 10px;
+  right: +50%;
+  z-index: 1000;
+}
+
+footer .arrowUp a {
   z-index: 1000;
 }
 /*# sourceMappingURL=style.css.map */
