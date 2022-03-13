@@ -7,7 +7,7 @@ header {
   .box1::after {
     content: " ";
     border-top: 100vh solid white;
-    border-right: 100vw solid #FFD542;
+    border-right: 100vw solid #ffd542;
     width: 0;
     position: absolute;
     z-index: -10;
@@ -27,6 +27,10 @@ header {
     display: flex;
     justify-content: space-around;
     width: 220px;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
 
     & a {
       position: relative;
@@ -104,6 +108,27 @@ header {
     position: absolute;
     transform: translate(+15%, +40%);
     margin: 0 auto;
+    width: 80%;
+
+    @media screen and (max-width: 1400px) {
+      transform: translate(+15%, +70%);
+    }
+
+    @media screen and (max-width: 1200px) {
+      transform: translate(+15%, +100%);
+    }
+    @media screen and (max-width: 1000px) {
+      transform: translate(+15%, +120%);
+    }
+    @media screen and (max-width: 800px) {
+      transform: translate(+15%, +140%);
+    }
+    @media screen and (max-width: 600px) {
+      transform: translate(+15%, +180%);
+    }
+    @media screen and (max-width: 550px) {
+      transform: translate(+15%, +240%);
+    }
 
     #textContainer {
       text-align: left;
@@ -112,17 +137,35 @@ header {
       font-weight: 100;
       position: relative;
 
+      @media screen and (max-width: 1400px) {
+        line-height: 75px;
+      }
+      @media screen and (max-width: 1200px) {
+        line-height: 62px;
+      }
+      @media screen and (max-width: 1000px) {
+        line-height: 55px;
+      }
+      @media screen and (max-width: 800px) {
+        line-height: 45px;
+      }
+      @media screen and (max-width: 600px) {
+        line-height: 40px;
+      }
+      @media screen and (max-width: 550px) {
+        line-height: 30px;
+      }
       .creative {
-        font-size: 15rem;
+        font-size: 12rem;
         background: linear-gradient(
           -45deg,
-          #FFD542 25%,
+          #ffd542 25%,
           #e17055 25%,
-          #FFD542 50%,
+          #ffd542 50%,
           #e17055 50%,
-          #FFD542  75%,
+          #ffd542 75%,
           #e17055 75%,
-          #FFD542
+          #ffd542
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -134,16 +177,69 @@ header {
             background-position: 20px 0, 20px 0, 20px 0;
           }
         }
+        @media screen and (max-width: 1400px) {
+          font-size: 12rem;
+        }
+        @media screen and (max-width: 1200px) {
+          font-size: 10rem;
+        }
+        @media screen and (max-width: 1000px) {
+          font-size: 8rem;
+        }
+        @media screen and (max-width: 800px) {
+          font-size: 6rem;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 5rem;
+        }
+        @media screen and (max-width: 550px) {
+          font-size: 4rem;
+        }
       }
 
       .front {
         font-size: 13rem;
         color: rgba(28, 24, 23, 0.938);
-      }
 
-      .web {
-        font-size: 15rem;
-        color: rgba(28, 24, 23, 0.938);
+        @media screen and (max-width: 1400px) {
+          font-size: 11rem;
+        }
+        @media screen and (max-width: 1200px) {
+          font-size: 9rem;
+        }
+        @media screen and (max-width: 1000px) {
+          font-size: 7rem;
+        }
+        @media screen and (max-width: 800px) {
+          font-size: 5rem;
+        }
+        @media screen and (max-width: 550px) {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .web {
+      font-size: 15rem;
+      color: rgba(28, 24, 23, 0.938);
+
+      @media screen and (max-width: 1400px) {
+        font-size: 12rem;
+      }
+      @media screen and (max-width: 1200px) {
+        font-size: 10rem;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: 8rem;
+      }
+      @media screen and (max-width: 800px) {
+        font-size: 6rem;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 5rem;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 4rem;
       }
     }
   }

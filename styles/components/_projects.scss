@@ -3,6 +3,10 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 1000px) {
+   display: none;
+   }
+   
 
 }
 
@@ -22,7 +26,10 @@
 .UlMain_banner li {
   width: 40%;
   text-align:  center;
-  
+  @media screen and (max-width: 1700px) {
+    width: 50%;
+  }
+
   
 }
 .UlMain_banner li a { 
@@ -31,6 +38,15 @@
   font-size: 5em;
   line-height: 65px;
   width: 80%;
+
+  @media screen and (max-width: 1400px) {
+   font-size: 4rem;
+   line-height: 55px;
+  }
+   @media screen and (max-width: 1100px) {
+   font-size: 3rem;
+   line-height: 42px;
+  }
   
 }
 .UlMain_banner li a:hover {
