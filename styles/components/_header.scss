@@ -97,6 +97,9 @@ header {
           & a:hover::before {
             transform: translateX(-50%) scale(1);
           }
+          @media screen and (max-width: 1000px) {
+            display: none;
+          }
         }
       }
     }

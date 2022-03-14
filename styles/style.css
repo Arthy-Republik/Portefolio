@@ -158,6 +158,12 @@ header .headerContainer .menu .nav ul a:hover::before {
           transform: translateX(-50%) scale(1);
 }
 
+@media screen and (max-width: 1000px) {
+  header .headerContainer .menu .nav ul {
+    display: none;
+  }
+}
+
 header .textContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,34 +533,37 @@ header .arrows path.a3 {
 }
 
 .inspiredByLife {
-  height: 1200px;
+  min-height: 130vh;
   z-index: -10;
   padding-top: 80px;
   background-color: black;
-  width: 100%;
+  min-width: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 1200px) {
   .inspiredByLife {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
 @media screen and (max-width: 800px) {
   .inspiredByLife {
-    height: 80vh;
+    min-height: 80vh;
   }
 }
 
 @media screen and (max-width: 750px) {
   .inspiredByLife {
-    height: 70vh;
+    min-height: 70vh;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .inspiredByLife {
-    height: 50vh;
+    min-height: 40vh;
   }
 }
 
@@ -1481,7 +1490,7 @@ header .arrows path.a3 {
     -ms-grid-rows: 600px 600px 600px 600px 600px 600px 600px;
         grid-template-rows: 600px 600px 600px 600px 600px 600px 600px;
     gap: 20px;
-        grid-template-areas: "p1"  "p2"  "p3" "p5" "p6" "p7"  "p8";
+        grid-template-areas: "p1" "p2" "p3" "p5" "p6" "p7" "p8";
   }
 }
 
@@ -1494,7 +1503,7 @@ header .arrows path.a3 {
     -ms-grid-rows: 500px 500px 500px 500px 500px 500px 500px;
         grid-template-rows: 500px 500px 500px 500px 500px 500px 500px;
     gap: 20px;
-        grid-template-areas: "p1"  "p2"  "p3" "p5" "p6" "p7"  "p8";
+        grid-template-areas: "p1" "p2" "p3" "p5" "p6" "p7" "p8";
   }
 }
 
@@ -1507,7 +1516,7 @@ header .arrows path.a3 {
     -ms-grid-rows: 400px 400px 400px 400px 400px 400px 400px;
         grid-template-rows: 400px 400px 400px 400px 400px 400px 400px;
     gap: 20px;
-        grid-template-areas: "p1"  "p2"  "p3" "p5" "p6" "p7"  "p8";
+        grid-template-areas: "p1" "p2" "p3" "p5" "p6" "p7" "p8";
   }
 }
 
@@ -1520,7 +1529,7 @@ header .arrows path.a3 {
     -ms-grid-rows: 300px 300px 300px 300px 300px 300px 300px;
         grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
     gap: 20px;
-        grid-template-areas: "p1"  "p2"  "p3" "p5" "p6" "p7"  "p8";
+        grid-template-areas: "p1" "p2" "p3" "p5" "p6" "p7" "p8";
   }
 }
 
@@ -1611,11 +1620,6 @@ header .arrows path.a3 {
   font-size: 3rem;
 }
 
-.skills h2 {
-  font-size: 6rem;
-  margin-left: 50px;
-}
-
 .contact {
   height: 100vh;
   display: -webkit-box;
@@ -1627,6 +1631,25 @@ header .arrows path.a3 {
           flex-direction: column;
   z-index: -1;
   position: relative;
+  margin-bottom: 250px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    height: 70vh;
+  }
 }
 
 .contact .contactH2 {
@@ -1636,31 +1659,68 @@ header .arrows path.a3 {
           margin-block-start: 0px;
   font-size: 10rem;
   line-height: 200px;
-  position: relative;
   font-weight: 100;
-  padding-left: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 200px;
   color: rgba(28, 24, 23, 0.938);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+  position: relative;
 }
 
-@media screen and (max-width: 1600px) {
-  .contact .contactH2 {
-    padding-left: 100px;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .contact .contactH2 {
-    font-size: 9rem;
-    line-height: 180px;
-  }
-}
-
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1550px) {
   .contact .contactH2 {
     font-size: 8rem;
-    padding-left: 200px;
+    line-height: 150px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .contact .contactH2 {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact .contactH2 {
+    font-size: 6rem;
+    line-height: 120px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact .contactH2 {
+    font-size: 5rem;
+    line-height: 100px;
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact .contactH2 {
+    font-size: 4rem;
+    line-height: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact .contactH2 {
+    font-size: 3rem;
+    line-height: 60px;
+    margin-left: 50px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact .contactH2 {
+    font-size: 2rem;
+    line-height: 40px;
   }
 }
 
@@ -1673,33 +1733,65 @@ header .arrows path.a3 {
 }
 
 .contact .contactContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 80px;
-  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact .contactContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
 }
 
 .contact .contactContent .inquiry {
   font-size: 2rem;
   letter-spacing: 2px;
-  width: 100%;
-  position: absolute;
+  padding: 50px;
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem;
+  margin: 0 auto;
+  width: 80%;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1300px) {
   .contact .contactContent .inquiry {
     font-size: 1.5rem;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact .contactContent .inquiry {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact .contactContent .inquiry {
+    padding: 40px 10px;
+    margin-top: -50px;
+    width: 100%;
   }
 }
 
@@ -1714,15 +1806,33 @@ header .arrows path.a3 {
 }
 
 .contact .contactContent .arthyPola {
-  position: absolute;
-  left: 150px;
-  top: -40px;
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 1550px) {
+  .contact .contactContent .arthyPola {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact .contactContent .arthyPola {
+    padding-right: 0px;
+    padding-left: 0;
+    margin: 0 auto;
+  }
 }
 
 .contact .contactContent .arthyPola img {
-  width: 80%;
+  width: 100%;
   -webkit-box-shadow: 10px 10px 50px #ccc;
   box-shadow: 10px 10px 50px #ccc;
+}
+
+@media screen and (max-width: 800px) {
+  .contact .contactContent .arthyPola img {
+    width: 90%;
+  }
 }
 
 footer {
@@ -1748,13 +1858,38 @@ footer .leftFooter {
   color: rgba(240, 248, 255, 0.801);
 }
 
+@media screen and (max-width: 1000px) {
+  footer .leftFooter {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .leftFooter {
+    font-size: 0.6rem;
+  }
+}
+
 footer .rightFooter a {
   color: rgba(240, 248, 255, 0.801);
   padding-left: 30px;
   font-size: 1rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   position: relative;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .rightFooter a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .rightFooter a {
+    display: none;
+  }
 }
 
 footer .rightFooter a::before {

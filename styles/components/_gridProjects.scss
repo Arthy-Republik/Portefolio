@@ -1,41 +1,39 @@
 .gridProjects {
- margin: 50px;
- @media screen and (max-width: 1400px) {
-  margin: 40px;
- }
- @media screen and (max-width: 800px) {
-  margin: 20px;
- }
+  margin: 50px;
+  @media screen and (max-width: 1400px) {
+    margin: 40px;
+  }
+  @media screen and (max-width: 800px) {
+    margin: 20px;
+  }
 
- 
   .featuredProjects {
     margin-top: 120px;
     margin-bottom: 20px;
     text-align: left;
     font-size: 6rem;
     background: white;
-    color:rgba(28, 24, 23, 0.938);
+    color: rgba(28, 24, 23, 0.938);
 
     @media screen and (max-width: 1600px) {
       font-size: 5rem;
-     }
-     @media screen and (max-width: 1400px) {
+    }
+    @media screen and (max-width: 1400px) {
       font-size: 4rem;
-     }
-     @media screen and (max-width: 1200px) {
+    }
+    @media screen and (max-width: 1200px) {
       font-size: 3rem;
-     }
-     @media screen and (max-width: 1000px) {
+    }
+    @media screen and (max-width: 1000px) {
       margin-top: 80px;
-     }
-     @media screen and (max-width: 600px) {
+    }
+    @media screen and (max-width: 600px) {
       margin-top: 60px;
-     }
-     
+    }
   }
   .gridContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 700px 800px 600px;
     gap: 50px 50px;
     grid-template-areas:
@@ -43,82 +41,76 @@
       "p4 p5 p5"
       "p6 p7 p8";
 
-      @media screen and (max-width: 1400px) {
-        display: grid;
-        grid-template-columns: 50% 50%  ;
-        grid-template-rows: 600px 800px 600px 600px;
-        gap:30px 30px;
-        grid-template-areas:
-          "p1 p2 "
-          "p3 p4 "
-          "p5 p5 "
-          "p6 p7";
-       }
-       @media screen and (max-width: 1000px) {
-         display: grid;
-         grid-template-columns: 100%  ;
-    grid-template-rows: 600px 600px 600px 600px 600px 600px 600px;
-    gap: 20px;
-    grid-template-areas:
-      "p1" 
-      "p2" 
-      "p3"
-      "p5"
-      "p6"
-       "p7" 
-       "p8";
-
-       }
-       @media screen and (max-width: 800px) {
-        display: grid;
-        grid-template-columns: 100%  ;
-   grid-template-rows: 500px 500px 500px 500px 500px 500px 500px;
-   gap: 20px;
-   grid-template-areas:
-     "p1" 
-     "p2" 
-     "p3"
-     "p5"
-     "p6"
-      "p7" 
-      "p8";
-
-      }
-      @media screen and (max-width: 600px) {
-        display: grid;
-        grid-template-columns: 100%  ;
-   grid-template-rows: 400px 400px 400px 400px 400px 400px 400px;
-   gap: 20px;
-   grid-template-areas:
-     "p1" 
-     "p2" 
-     "p3"
-     "p5"
-     "p6"
-      "p7" 
-      "p8";
-
-      }
-      @media screen and (max-width: 500px) {
-        display: grid;
-        grid-template-columns: 100%  ;
-   grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
-   gap: 20px;
-   grid-template-areas:
-     "p1" 
-     "p2" 
-     "p3"
-     "p5"
-     "p6"
-      "p7" 
-      "p8";
-
-      }
-    .p1 { 
+    @media screen and (max-width: 1400px) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 600px 800px 600px 600px;
+      gap: 30px 30px;
+      grid-template-areas:
+        "p1 p2 "
+        "p3 p4 "
+        "p5 p5 "
+        "p6 p7";
+    }
+    @media screen and (max-width: 1000px) {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 600px 600px 600px 600px 600px 600px 600px;
+      gap: 20px;
+      grid-template-areas:
+        "p1"
+        "p2"
+        "p3"
+        "p5"
+        "p6"
+        "p7"
+        "p8";
+    }
+    @media screen and (max-width: 800px) {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 500px 500px 500px 500px 500px 500px 500px;
+      gap: 20px;
+      grid-template-areas:
+        "p1"
+        "p2"
+        "p3"
+        "p5"
+        "p6"
+        "p7"
+        "p8";
+    }
+    @media screen and (max-width: 600px) {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 400px 400px 400px 400px 400px 400px 400px;
+      gap: 20px;
+      grid-template-areas:
+        "p1"
+        "p2"
+        "p3"
+        "p5"
+        "p6"
+        "p7"
+        "p8";
+    }
+    @media screen and (max-width: 500px) {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
+      gap: 20px;
+      grid-template-areas:
+        "p1"
+        "p2"
+        "p3"
+        "p5"
+        "p6"
+        "p7"
+        "p8";
+    }
+    .p1 {
       grid-area: p1;
       background-image: url(./assets/img/background.jpg);
-
-      
     }
     .p2 {
       grid-area: p2;
@@ -138,7 +130,7 @@
     }
     .p6 {
       grid-area: p6;
-      background-image: url(./assets/img/dish-gallery-05.jpg);  
+      background-image: url(./assets/img/dish-gallery-05.jpg);
     }
     .p7 {
       grid-area: p7;
@@ -149,16 +141,14 @@
       background-image: url(./assets/img/tinder1.png);
     }
 
-  .projectsPicture { 
-  overflow: hidden;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
-  min-height:auto;
-  
-
-}
+    .projectsPicture {
+      overflow: hidden;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 100%;
+      min-height: auto;
+    }
 
     .projectsPicture:hover {
       background-image: none;
@@ -167,15 +157,13 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-     
+      
     }
 
     .projectsPicture:hover:after {
       content: attr(data-hover);
       color: white;
       font-size: 3rem;
-    
     }
   }
 }
-

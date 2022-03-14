@@ -1,89 +1,75 @@
 .inspiredByLife {
-  height: 1200px;
+  min-height: 130vh;
   z-index: -10;
   padding-top: 80px;
-  background-color:black;
-  width: 100%;
+  background-color: black;
+  min-width: none;
+
+  display: flex;
+  //  justify-content: center;
   @media screen and (max-width: 1200px) {
-   height: 100vh;
-   
+    min-height: 100vh;
   }
+
   @media screen and (max-width: 800px) {
-   height: 80vh;
-   
+    min-height: 80vh;
   }
   @media screen and (max-width: 750px) {
-    height: 70vh;
-    
-   }
-   @media screen and (max-width: 600px) {
-    height: 50vh;
-    
-   }
+    min-height: 70vh;
+  }
+  @media screen and (max-width: 650px) {
+    min-height: 40vh;
+  }
   .inspired {
     text-align: left;
-  padding-left: 120px;
+    padding-left: 120px;
 
-  @media screen and (max-width: 1200px) {
-    padding-left: 70px;
-   
-  }
-  @media screen and (max-width: 800px) {
-    padding-left: 40px;
-   
-  }
-  @media screen and (max-width: 450px) {
-    padding-left: 10px;
-   
-  }
- 
-  
+    @media screen and (max-width: 1200px) {
+      padding-left: 70px;
+    }
+    @media screen and (max-width: 800px) {
+      padding-left: 40px;
+    }
+    @media screen and (max-width: 450px) {
+      padding-left: 10px;
+    }
 
     p {
       // font-size: 20rem;
       margin-block-start: 0;
       margin-block-end: 0;
-   line-height: 200px;
+      line-height: 200px;
       position: relative;
       letter-spacing: 2px;
       font-family: "Monoton";
-     
+
       @media screen and (max-width: 1400px) {
-     line-height: 140px;
-       
+        line-height: 140px;
       }
       @media screen and (max-width: 1250px) {
-      line-height: 130px;
-       
+        line-height: 130px;
       }
       @media screen and (max-width: 950px) {
         line-height: 110px;
-         
-        }
-        @media screen and (max-width: 850px) {
-          line-height: 90px;
-           
-          }
-          @media screen and (max-width: 750px) {
-            line-height: 80px;
-             
-            }
-            @media screen and (max-width: 650px) {
-              line-height: 60px;
-               
-              }
-              @media screen and (max-width: 580px) {
-                line-height: 50px;
-              }
-
-
-    
+      }
+      @media screen and (max-width: 850px) {
+        line-height: 90px;
+      }
+      @media screen and (max-width: 750px) {
+        line-height: 80px;
+      }
+      @media screen and (max-width: 650px) {
+        line-height: 60px;
+      }
+      @media screen and (max-width: 580px) {
+        line-height: 50px;
+      }
 
       #inspired {
         position: absolute;
         padding-left: 50px;
         font-size: 15rem;
-        color:  rgba(240, 248, 255, 0.767);
+        color: rgba(240, 248, 255, 0.767);
         @media screen and (max-width: 1600px) {
           font-size: 13rem;
         }
@@ -92,68 +78,58 @@
         }
         @media screen and (max-width: 1250px) {
           font-size: 9rem;
-         
         }
         @media screen and (max-width: 1200px) {
           font-size: 8rem;
-         
         }
         @media screen and (max-width: 950px) {
           font-size: 7rem;
-        
         }
         @media screen and (max-width: 850px) {
           font-size: 6rem;
-        
         }
         @media screen and (max-width: 750px) {
           font-size: 5rem;
-        
         }
         @media screen and (max-width: 650px) {
           font-size: 4rem;
-        
         }
         @media screen and (max-width: 580px) {
           font-size: 3rem;
-        
         }
-       
       }
       .by {
         transform: translateX(+450px);
         padding-left: 50px;
         font-size: 12rem;
         position: absolute;
-        color:  rgba(240, 248, 255, 0.767);
+        color: rgba(240, 248, 255, 0.767);
 
         @media screen and (max-width: 1600px) {
           font-size: 10rem;
         }
         @media screen and (max-width: 1400px) {
           font-size: 8rem;
-        
+
           transform: translateX(+420px);
         }
         @media screen and (max-width: 1250px) {
           font-size: 8rem;
-        
+
           transform: translateX(+400px);
         }
         @media screen and (max-width: 1200px) {
           font-size: 7rem;
-          ;
           transform: translateX(+350px);
         }
         @media screen and (max-width: 950px) {
           font-size: 6rem;
-          
+
           transform: translateX(+320px);
-        
         }
         @media screen and (max-width: 850px) {
           font-size: 5rem;
-       
+
           transform: translateX(+280px);
         }
         @media screen and (max-width: 750px) {
@@ -170,45 +146,40 @@
         }
         @media screen and (max-width: 500px) {
           font-size: 3rem;
-       
         }
-       
-       
       }
       .life {
         transform: translateX(+750px);
         font-size: 15rem;
         position: absolute;
-      
+
         @media screen and (max-width: 1400px) {
           font-size: 11rem;
-        
+
           transform: translateX(+650px);
         }
         @media screen and (max-width: 1250px) {
           font-size: 9rem;
           transform: translateX(+550px);
-      
         }
         @media screen and (max-width: 1200px) {
           font-size: 8rem;
-      
+
           transform: translateX(+500px);
         }
         @media screen and (max-width: 950px) {
           font-size: 8rem;
-      
+
           transform: translateX(+450px);
-        
         }
         @media screen and (max-width: 850px) {
           font-size: 7rem;
-         
+
           transform: translateX(+420px);
         }
         @media screen and (max-width: 750px) {
           font-size: 6rem;
-         
+
           transform: translateX(+350px);
         }
         @media screen and (max-width: 650px) {
@@ -223,33 +194,27 @@
           font-size: 3rem;
           transform: translateX(+240px);
         }
-       
       }
       .and {
         // transform: translateX(+450px);
         position: absolute;
-        
+
         font-size: 15rem;
         color: rgba(240, 248, 255, 0.767);
 
         @media screen and (max-width: 1600px) {
           font-size: 13rem;
-        
-         
         }
         @media screen and (max-width: 1400px) {
           font-size: 11rem;
           line-height: 200px;
-        
         }
         @media screen and (max-width: 1250px) {
           font-size: 9rem;
           line-height: 150px;
-          
         }
         @media screen and (max-width: 950px) {
           font-size: 8rem;
-      
         }
         @media screen and (max-width: 850px) {
           font-size: 7rem;
@@ -262,25 +227,21 @@
         @media screen and (max-width: 650px) {
           font-size: 4rem;
           line-height: 90px;
-       
         }
         @media screen and (max-width: 580px) {
           font-size: 3rem;
           line-height: 70px;
-       
         }
-     
       }
       .passion {
         transform: translateX(+150px);
         font-size: 15rem;
         line-height: 350px;
         position: absolute;
-        color:  rgba(240, 248, 255, 0.767);
+        color: rgba(240, 248, 255, 0.767);
 
         @media screen and (max-width: 1600px) {
           font-size: 13em;
-        
         }
         @media screen and (max-width: 1400px) {
           font-size: 11rem;
@@ -292,7 +253,6 @@
         }
         @media screen and (max-width: 1200px) {
           font-size: 8rem;
-         
         }
         @media screen and (max-width: 950px) {
           font-size: 7rem;
@@ -300,13 +260,10 @@
         }
         @media screen and (max-width: 850px) {
           font-size: 6rem;
-       
-       
         }
         @media screen and (max-width: 750px) {
           font-size: 5rem;
           line-height: 130px;
-       
         }
         @media screen and (max-width: 650px) {
           font-size: 4rem;

@@ -12,6 +12,13 @@ footer {
     font-size: 1rem;
     letter-spacing: 2px;
     color: rgba(240, 248, 255, 0.801);
+    @media screen and (max-width: 1000px) {
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 0.6rem;
+    }
   }
 
   .rightFooter {
@@ -19,9 +26,15 @@ footer {
       color: rgba(240, 248, 255, 0.801);
       padding-left: 30px;
       font-size: 1rem;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       position: relative;
       letter-spacing: 2px;
+      @media screen and (max-width: 1000px) {
+        font-size: 0.8rem;
+      }
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
     }
     & a::before {
       content: "";
@@ -33,28 +46,20 @@ footer {
       height: 1.5px;
       width: 70%;
       background-color: rgba(240, 248, 255, 0.801);
-      
     }
 
     & a:hover::before {
       transform: translateX(-50%) scale(1);
-     
     }
   }
-  .arrowUp { 
+  .arrowUp {
     position: absolute;
     bottom: 10px;
     right: +50%;
     z-index: 1000;
-  
-  
-    a { 
+
+    a {
       z-index: 1000;
-
-      
-
-      
     }
-
-}
+  }
 }
