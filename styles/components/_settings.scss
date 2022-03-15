@@ -3,18 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
 
 @import url("https://fonts.googleapis.com/css?family=Monoton");
+
 * {
   scroll-behavior: smooth;
   list-style: none;
-  // font-family: "Vollkorn-Regular";
-  cursor: pointer;
-  // max-width: 2000px;
+  scrollbar-color: rgb(116, 16, 216) green;
 }
+
 a {
   text-decoration: none;
   color: rgba(28, 24, 23, 0.938);
   font-family: "Vollkorn", serif;
 }
+
 body {
   margin: 0;
   padding: 0;
