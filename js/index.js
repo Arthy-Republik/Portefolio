@@ -4,3 +4,5 @@ const imgChange =(e) => {
 
 };
 
+// *********************** Scroll effect
+

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Arthur B</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
   <link href="/chemin-vers-fontawesome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -74,7 +74,7 @@
           target="_blank">RESTO</a>
       </li>
       <li><a onmouseover='imgChange("./3.jpg")' href="https://arthy-republik.github.io/La-Montagne/" target="_blank">
-          MONTAGNE</a></li>
+          LA MONTAGNE</a></li>
       <li><a onmouseover='imgChange("4.jpg")' href="https://arthy-republik.github.io/Hackathon-Final-Project/"
           target="_blank">THE WAREHOUSE</a></li>
       <li><a onmouseover='imgChange("./run.jpg")' href="https://arthy-republik.github.io/Run/" target="_blank">RUN</a>
@@ -93,17 +93,63 @@
       <a class="p1 projectsPicture" data-hover="SPACE X" href="www.google.com" target="_blank">
         <div class=""></div>
       </a>
-      <a class="p2 projectsPicture" data-hover="RUN" href="https://arthy-republik.github.io/Run/"  target="_blank"> <div class=""></div></a>
-      <a class="p3 projectsPicture" data-hover="IMMO" href="" target="_blank"><div class=""></div></a>
-      <a class="p4 projectsPicture" data-hover="THE MOVIE APP" href="" target="_blank"><div class=""></div></a>
-      <a class="p5 projectsPicture" data-hover="THE WAREHOUSE" href="" target="_blank"><div class=""></div> </a>
-      <a class="p6 projectsPicture" data-hover="RESTO" href="" target="_blank"><div class=""></div></a>
-      <a class="p7 projectsPicture" data-hover="LA MONTAGNE" href="" target="_blank"><div class=""></div></a>
-      <a class="p8 projectsPicture" data-hover="THE MEET APP" href=""  target="_blank"><div class=""></div></a>
+      <a class="p2 projectsPicture" data-hover="RUN" href="https://arthy-republik.github.io/Run/" target="_blank">
+        <div class=""></div>
+      </a>
+      <a class="p3 projectsPicture" data-hover="IMMO" href="" target="_blank">
+        <div class=""></div>
+      </a>
+      <a class="p4 projectsPicture" data-hover="THE MOVIE APP" href="" target="_blank">
+        <div class=""></div>
+      </a>
+      <a class="p5 projectsPicture" data-hover="THE WAREHOUSE" href="" target="_blank">
+        <div class=""></div>
+      </a>
+      <a class="p6 projectsPicture" data-hover="RESTO" href="" target="_blank">
+        <div class=""></div>
+      </a>
+      <a class="p7 projectsPicture" data-hover="LA MONTAGNE" href="" target="_blank">
+        <div class=""></div>
+      </a>
+      <a class="p8 projectsPicture" data-hover="THE MEET APP" href="" target="_blank">
+        <div class=""></div>
+      </a>
       </div>
   </section>
-
-  <section class="contact" id="contactLink">
+  <section class="container">
+    <div data-scroll-container>
+      <section class="threeD" id="threeD" data-scroll-section>
+        <h3 class="skills-h3">
+          <span data-scroll data-scroll-repeat data-scroll-speed="5">S</span>
+          <span data-scroll data-scroll-repeat data-scroll-speed="2">K</span>
+          <span data-scroll data-scroll-repeat data-scroll-speed="3">I</span>
+          <span data-scroll data-scroll-repeat data-scroll-speed="5">L</span>
+          <span data-scroll data-scroll-repeat data-scroll-speed="2">L</span>
+          <span data-scroll data-scroll-repeat data-scroll-speed="4">S</span>
+        </h3>
+        <div class="skewsec">
+          <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="20"
+            data-scroll-target="#threeD">HTML--SASS--REACT--JAVASCRIPT</span>
+        </div>
+        <div class="skewsec">
+          <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20"
+            data-scroll-target="#threeD">WORDPRESS--PHP--SYMFONY</span>
+        </div>
+      </section>
+      <div class="getInTouch" data-scroll-section>
+        <h3 data-scroll data-scroll-repeat>
+          <span data-scroll data-scroll-delay="0.15" data-scroll-speed="5">C</span>
+          <span data-scroll data-scroll-delay="0.095" data-scroll-speed="5">O</span>
+          <span data-scroll data-scroll-delay="0.085" data-scroll-speed="5">N</span>
+          <span data-scroll data-scroll-delay="0.075" data-scroll-speed="5">T</span>
+          <span data-scroll data-scroll-delay="0.055" data-scroll-speed="5">A</span>
+          <span data-scroll data-scroll-delay="0.045" data-scroll-speed="5">C</span>
+          <span data-scroll data-scroll-delay="0.035" data-scroll-speed="5">T</span>
+        </h3>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="contact" id="contactLink">
     <div class="contactH2">
       <h2>GET IN <br> <span>TOUCH</span> </h2>
     </div>
@@ -115,7 +161,7 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
   <footer>
     <div class="leftFooter">
       <p> A CODE SAVE THE QUEEN DESIGN</p>
@@ -131,8 +177,10 @@
     </div>
 
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/scroll.js"></script>
 </body>
 
 </html>

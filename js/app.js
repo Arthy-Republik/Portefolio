@@ -27,3 +27,4 @@ console.log(document.querySelector('.life span:nth-child(1)'));
 setInterval(() => {
   neonGlory(document.querySelector('.life span:nth-child(1)'));
 }, 800)
+
