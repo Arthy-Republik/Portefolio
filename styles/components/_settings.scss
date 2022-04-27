@@ -4,10 +4,17 @@
 
 @import url("https://fonts.googleapis.com/css?family=Monoton");
 
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/cannia/Cannia.otf);
+}
+
+$font-1:"font-1";
+
 * {
   scroll-behavior: smooth;
   list-style: none;
-  scrollbar-color: rgb(116, 16, 216) green;
+
 }
 
 a {
@@ -26,7 +33,3 @@ body {
   font-family: "Vollkorn-Regular";
 }
 
-@font-face {
-  font-family: Cannia;
-  src: url(../assets/fonts/cannia/Cannia.otf);
-}
